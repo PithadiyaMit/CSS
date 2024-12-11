@@ -1,0 +1,94 @@
+/* Universal selector(Astelisk[*]) */
+*{
+    font-family:'Courier New';
+}
+
+/* Element selector h3 & h1 */
+h3{
+    color:rgb(54, 86, 192);
+}
+
+h1{
+    color: #b92b27;
+}
+
+/* Id selector #myId_Attribute */
+#login{
+    background-color: rgb(255, 255, 255);
+}
+
+#signup{
+    background-color: #b92b27;
+}
+
+/* Class Selector */
+.upvote{
+    background-color: rgb(71, 183, 71);
+}
+
+/* descendant selector */
+p a {
+    color: rgb(237, 232, 226);
+    background-color: rgb(10, 148, 169);
+}
+
+nav ul li a{
+    color: #b13606;
+}
+
+/* Adjacent Sibling Combination */
+p+h3{
+    text-decoration: underline;
+}
+
+.upvote+button{
+    background-color: rgb(72, 72, 211);
+    color: white;
+} 
+
+/* child selector */
+div>input{
+    background-color: aqua;
+}
+
+/* Attribute selector */
+input[type="text"]{
+    color: red;
+}
+
+input[type="password"]{
+    color: green;
+}
+
+/* pseudo Class */
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+button:active{
+    background-color: blue;
+    color: yellowgreen;
+}
+
+input[type="radio"]:checked + label{
+    color: red;
+    font-weight: bold;
+}
+
+div:nth-of-type(2n){
+    background-color: gray;
+}
+
+/* Pseudo Element */
+h1::first-letter{
+    color: black;
+}
+
+p::first-line{
+    color: rgb(178, 7, 10);
+}
+
+p::selection{
+    background-color: lime;
+}
